@@ -3,7 +3,6 @@
 class BinarySearch
   KEY_NOT_FOUND = -1  
   def initialize
-    
     list = get_list
     min = 0
     max = list.length-1
@@ -17,12 +16,11 @@ class BinarySearch
     else
       puts "Key #{key} is present in position #{value}"
     end
-
   end
   
   def get_list
     puts "\nEnter list: \n"
-    list = gets
+    list = gets.chomp
     arr = list.split.map(&:to_i).sort
   end
   
